@@ -38,13 +38,14 @@ const DynamicItems = (role: string) => {
 	const commonAdminItems: MenuProps["items"] = [
 		{
 			label: <Link href={`/${role}/manage-students`}>Manage-Students</Link>,
-			icon: <TableOutlined />,
-			key: [`/${role}/manage-students`],
+      key: `/${role}/manage-students`,
+			icon: <TableOutlined />
+			
 		},
 		{
 			label: <Link href={`/${role}/manage-faculty`}>Manage-Faculty</Link>,
 			icon: <TableOutlined />,
-			key: [`/${role}/manage-faculty`],
+			key: `/${role}/manage-faculty`,
 		},
 	];
 
@@ -183,11 +184,7 @@ const DynamicItems = (role: string) => {
 			key: `/${role}/courses/schedule`,
 			icon: <ScheduleOutlined />,
 		},
-		{
-			label: <Link href={`/${role}/courses/schedule`}>Courses schedules</Link>,
-			key: `/${role}/courses/schedule`,
-			icon: <ScheduleOutlined />,
-		},
+	
 		{
 			label: <Link href={`/${role}/registration`}>Registration</Link>,
 			key: `/${role}/registration`,

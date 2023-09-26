@@ -9,7 +9,7 @@ import DynamicItems from "@/constants/dynamicItems";
 import { USER_ROLE } from "@/constants/role";
 import Image from "next/image";
 
-const role = USER_ROLE.STUDENT;
+const role = USER_ROLE.ADMIN;
 
 const Sidebar = () => {
 	const [collapsed, setCollapsed] = useState(false);
